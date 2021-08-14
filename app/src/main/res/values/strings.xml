@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TFT-Instagram</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">Y7WyK1NXsGRg1uTBv7uAqW8h5h5Yoqi9dOorxVTo</string>
+    <string name="back4app_client_key">f64djMYZFFITpD9iA5ZzIOxZOeVS2biLixa9129t</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
