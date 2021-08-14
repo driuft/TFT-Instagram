@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android%22%3E
+
+    <item android:state_pressed="true"
+        android:state_enabled="true"
+        android:drawable="@drawable/instagram_new_post_filled_24"
+        android:color="@color/black"/>
+    <item android:state_selected="true"
+        android:state_enabled="true"
+        android:drawable="@drawable/instagram_new_post_filled_24"
+        android:color="@color/black"/>
+    <item android:drawable="@drawable/instagram_new_post_outline_24"
+        android:state_enabled="true"
+        android:color="@color/black"/>
+
+</selector>

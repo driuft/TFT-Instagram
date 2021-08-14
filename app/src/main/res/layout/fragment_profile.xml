@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvFollowingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivProfile"
+                android:layout_alignEnd="@+id/ivMenu"
+                android:layout_marginTop="50dp"
+                android:text="Following"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvPostsText"
+                android:layout_alignEnd="@+id/tvPostsText"
+                android:layout_alignBottom="@+id/tvPostsText"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="10"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFollows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvFollowerLabel"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toStartOf="@+id/tvFollowingLabel"
+                android:layout_toEndOf="@+id/tvPostsText"
+                android:fontFamily="sans-serif-medium"
+                android:text="250"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFollows2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvFollowingLabel"
+                android:layout_alignEnd="@+id/tvFollowingLabel"
+                android:layout_alignBottom="@+id/tvFollowingLabel"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="263"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPostsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivProfile"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@+id/ivProfile"
+                android:text="Posts"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/tvHandle"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tvHandle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ivProfile"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="driuft" />
+
+            <TextView
+                android:id="@+id/tvFollowerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivProfile"
+                android:layout_marginTop="50dp"
+                android:layout_toStartOf="@+id/tvFollowingLabel"
+                android:layout_toEndOf="@+id/tvPostsText"
+                android:text="Followers"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivLock"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/ivProfile"
+                android:layout_alignTop="@+id/tvHandle"
+                android:layout_marginTop="1dp"
+                android:src="@android:drawable/ic_lock_lock"
+                android:tint="#333333" />
+
+            <ImageView
+                android:id="@+id/ivExtras"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/tvHandle"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/tvHandle"
+                android:src="@drawable/outline_expand_more_24"
+                android:tint="#333333" />
+
+            <ImageView
+                android:id="@+id/ivCompose"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignTop="@+id/tvHandle"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="13dp"
+                android:layout_toStartOf="@+id/ivMenu"
+                android:src="@drawable/instagram_new_post_outline_24"
+                android:tint="#333333" />
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/tvHandle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/outline_menu_24"
+                android:tint="#333333" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProfile"
+                android:layout_alignStart="@+id/ivProfile"
+                android:layout_alignEnd="@+id/ivProfile"
+                android:layout_marginTop="5dp"
+                android:text="Aldo Socarras"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_alignStart="@+id/tvName"
+                android:layout_alignEnd="@+id/tvFollows2"
+                android:text="📍 La Saguesera"
+                android:textAlignment="textStart"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvCaption"
+                android:layout_alignStart="@+id/ivProfile"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/btnExtras"
+                android:fontFamily="sans-serif-medium"
+                android:text="Edit Profile"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="3dp"
+                app:strokeColor="#CCCCCC"
+                app:strokeWidth="0.25dp" />
+
+            <Button
+                android:id="@+id/btnExtras"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvCaption"
+                android:layout_alignEnd="@+id/tvFollows2"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/outline_expand_more_24"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="3dp"
+                app:icon="@drawable/outline_expand_more_24"
+                app:iconTint="#333333"
+                app:strokeColor="#CCCCCC"
+                app:strokeWidth="0.25dp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tlProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIconTint="#333333">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/outline_grid_on_24" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/outline_assignment_ind_24" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeContainer">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rvPosts"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</FrameLayout>
